@@ -51,3 +51,28 @@ Reports:
 ```
 
 3. Open a terminal and run any custom script
+
+- We can create json reports for more advanced reporting - i.e Jenkins reports
+
+1. Download the cucumber json formatter: https://github.com/cucumber/json-formatter
+
+2. Adding a json object with a file location within the "cypress-cucumber-preprocessor" object
+
+```
+"json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    }
+
+```
+
+3. Open a terminal and run any custom script
+
+- Another important note: If you make changes to your tests and want to regenerate a report, and after running your custom script via the terminal, you can follow up with this command: node cucumber-html-report.js (this using the Multiple cucumber Html reports package). Alternatively, you can append the command to any custom script using && for example:
+
+```
+"login-tests-headed": "cypress run -e TAGS=\"@login\" --headed && node cucumber-html-report.js",
+```
+
+---
