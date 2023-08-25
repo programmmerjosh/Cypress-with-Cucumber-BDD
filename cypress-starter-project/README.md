@@ -76,3 +76,18 @@ Reports:
 ```
 
 ---
+
+Hooks:
+See cypress/support/step_definitions/Base_Steps.js
+
+---
+
+Custom commands:
+See cypress/support/commands.js
+
+---
+
+Page Object Modelling:
+See Base_PO in cypress/support/page-objects/Base_PO.js and where it's used
+
+---

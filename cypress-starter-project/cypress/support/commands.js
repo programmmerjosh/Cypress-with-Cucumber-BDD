@@ -23,3 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// this is a custom command that forces a clicked link to NOT open in a new tab
+Cypress.Commands.add("clickAndOpenLink_InSameTab", (selector) => {
+  cy.get(selector).invoke("removeAttr", "target").click();
+});
