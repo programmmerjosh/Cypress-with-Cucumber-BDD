@@ -1,13 +1,17 @@
 /// <reference types="cypress" />
 
-import { Given, When } from "@badeball/cypress-cucumber-preprocessor";
-// import Base_PO from "../page-objects/Base_PO";
-import Homepage_PO from "../page-objects/Homepage_PO";
+import { Before, Given, When } from "@badeball/cypress-cucumber-preprocessor";
+// import Base_PO from "../page_objects/Base_PO";
+import Homepage_PO from "../page_objects/Homepage_PO";
 
 // const homepageUrl = "https://www.webdriveruniversity.com/";
 
 // const basePage = new Base_PO();
 const homePage = new Homepage_PO();
+
+Before(() => {
+  cy.log("Executing commands inside Homepage Steps");
+});
 
 Given(`I navigate to the webdriveruniversity homepage`, () => {
   // do something

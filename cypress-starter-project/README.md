@@ -88,6 +88,6 @@ See cypress/support/commands.js
 ---
 
 Page Object Modelling:
-See Base_PO in cypress/support/page-objects/Base_PO.js and where it's used
+See Base_PO in cypress/support/page_objects/Base_PO.js and where it's used
 
 ---
