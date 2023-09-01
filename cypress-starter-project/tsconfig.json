@@ -1,5 +1,5 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node16"
+    "baseUrl": "http://localhost:8080"
   }
 }
