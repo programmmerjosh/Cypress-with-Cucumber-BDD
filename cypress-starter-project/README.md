@@ -91,3 +91,12 @@ Page Object Modelling:
 See Base_PO in cypress/support/page_objects/Base_PO.js and where it's used
 
 ---
+
+Running Jenkins:
+
+- locate the jenkins.war file (you should have java jdk 11 or 17 installed btw). Open a terminal in the directory where the jar file lives.
+- type: java -jar jenkins.war
+- if it says the port is already in use, you can use the same command above but append --httpsPort=9090 or whatever port you want to use.
+
+- For a readable format in the console logs, start up Jenkens with this command in your terminal:
+  java -Dfile.encoding=UTF8 -jar jenkins.war

@@ -19,7 +19,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
-    "cypress": "^12.17.2",
+    "cypress": "^13.1.0",
     "cypress-xpath": "^2.0.1",
     "multiple-cucumber-html-reporter": "^3.4.0",
     "ts-loader": "^9.4.4"
@@ -39,5 +39,10 @@
       "formatter": "cucumber-json-formatter",
       "output": "cypress/reports/cucumber-json/cucumber-report.json"
     }
+  },
+  ".": {
+    "import": "./index.mjs",
+    "require": "./index.js",
+    "types": "./types/index.d.ts"
   }
 }
