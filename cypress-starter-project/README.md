@@ -1,6 +1,15 @@
-### Course notes/summary for future reference:
+## Course notes/summary for future reference:
 
-Setup:
+### How to run this particular project locally:
+
+1. Download the project repo
+2. Make sure you have node v18 installed or use Node Version Manager: (**nvm use v18.17.1**)
+3. **npm install**
+4. **npm run SCRIPT_NAME** (see script key value pairs in package.json)
+
+---
+
+How to Setup another UI test project like this one:
 
 In package.json, we need to tell the cypress-cucumber-preprocessor where our step definitions are located
 
