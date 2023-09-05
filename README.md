@@ -45,3 +45,12 @@ Ability to create visually appealing reports within Jenkins and attach images to
 Learn how to handle Extensible Choice Parameters (Selection Dropdown lists) via Jenkins.
 
 And much more!
+
+---
+
+Some screenshots using cypress UI testing in Jenkins
+![Build With Parameters](./img/build-with-params.png)
+![Expanded Cucumber Reports](./img/cucumber-reports-expanded.png)
+![Jenkins Dashboard](./img/Jenkins-cypress-dashboard-01.png)
+![Run Scripts using Build With Parameters](./img/run-scripts-build-with-params.png)
+![Test Running In Progress](./img/test-running.png)
