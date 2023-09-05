@@ -4,6 +4,7 @@
 
 1. Download the project repo
 2. Make sure you have node v18 installed or use Node Version Manager: (**nvm use v18.17.1**)
+   2a. We are also assuming cypress is already installed on your machine.
 3. **npm install**
 4. **npm run SCRIPT_NAME** (see script key value pairs in package.json)
 
@@ -11,11 +12,34 @@
 
 How to Setup another UI test project like this one:
 
-In package.json, we need to tell the cypress-cucumber-preprocessor where our step definitions are located
+1. Create a new project repo
+2. Open up a cmd/terminal from the project directory
+3. `npm init` and follow the setup guide (project name, project version, project description etc) -> this will create our package.json file which is the starting point
+4. `npm install --save-dev cypress`
+5. `npx cypress open` (assuming you already have npx installed)
+6. A window should pop up and say 'Welcome to Cypress'
+7. Select E2E Testing
+8. Keep all checkboxes checked
+9. Select Continue
+10. Cypress will then create the project setup for you
+11. Select a browser and click on Start E2E testing
+12. Click on the 'Scaffold example specs' button to create dummy tests
+13. Go to https://www.npmjs.com/package/cypress-cucumber-preprocessor to get installation instructions for this package. Should just be `npm install --save-dev cypress-cucumber-preprocessor`
+14. We can delete the cypress.config.js file and copy over the cypress.config.ts from another cypress project or go to the GitHub cypress-cucumber-preprocessor repo for the readme documentation
+15. `npm install --save-dev @bahmutov/cypress-esbuild-preprocessor`
+16. `npm install ts-loader --save-dev`
+17. import a config.json file from any other cypress project
+18. In package.json, we need to tell the cypress-cucumber-preprocessor where our step definitions are located
 
+```
 "cypress-cucumber-preprocessor": {
 "stepDefinitions": "cypress/support/step\*definitions/\*\*/\_.js"
 }
+```
+
+### But it might be best to copy over the entire cypress-cucumber-preprocessor js object from this project's (or another working cypress project's) package.json
+
+See Docs on commands if needed: https://docs.cypress.io/api/table-of-contents
 
 ---
 
