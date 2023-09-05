@@ -48,9 +48,24 @@ And much more!
 
 ---
 
-Some screenshots using cypress UI testing in Jenkins
-![Build With Parameters](./img/build-with-params.png)
-![Expanded Cucumber Reports](./img/cucumber-reports-expanded.png)
-![Jenkins Dashboard](./img/Jenkins-cypress-dashboard-01.png)
-![Run Scripts using Build With Parameters](./img/run-scripts-build-with-params.png)
-![Test Running In Progress](./img/test-running.png)
+## Some screenshots using cypress UI testing in Jenkins
+
+### Building with parameters: in this case, selecting a desired browser
+
+## ![Build With Parameters](./img/build-with-params.png)
+
+### Using the Cucumber reports plugin
+
+## ![Expanded Cucumber Reports](./img/cucumber-reports-expanded.png)
+
+### Jenkins Dashboard
+
+## ![Jenkins Dashboard](./img/Jenkins-cypress-dashboard-01.png)
+
+### Building with parameters: in this case, selecting a custom script
+
+## ![Run Scripts using Build With Parameters](./img/run-scripts-build-with-params.png)
+
+### A test running in progress
+
+## ![Test Running In Progress](./img/test-running.png)
